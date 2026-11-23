@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>민준 ♥ 유나 결혼합니다</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 떨어지는 꽃잎 -->
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <main class="card">
+    <!-- 커버 -->
+    <section class="cover">
+      <svg class="floral floral-top" viewBox="0 0 300 120" aria-hidden="true">
+        <g fill="none" stroke="#9bb59a" stroke-width="2">
+          <path d="M10 100 C 80 20, 220 20, 290 100"/>
+          <path d="M60 60 q -15 -20 -5 -35"/><path d="M240 60 q 15 -20 5 -35"/>
+        </g>
+        <g fill="#f3c4c8"><circle cx="150" cy="38" r="14"/><circle cx="105" cy="48" r="9"/><circle cx="195" cy="48" r="9"/></g>
+        <g fill="#e89aa3"><circle cx="150" cy="38" r="6"/><circle cx="105" cy="48" r="4"/><circle cx="195" cy="48" r="4"/></g>
+        <g fill="#b9d0b5"><ellipse cx="55" cy="25" rx="5" ry="10" transform="rotate(-20 55 25)"/><ellipse cx="245" cy="25" rx="5" ry="10" transform="rotate(20 245 25)"/></g>
+      </svg>
+
+      <p class="script">We're getting married</p>
+      <h1 class="names"><span>김민준</span><em>&amp;</em><span>이유나</span></h1>
+
+      <div class="cover-illust" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="92" fill="#fbeef0"/>
+          <path d="M100 150 C 40 110, 55 55, 100 80 C 145 55, 160 110, 100 150 Z" fill="#f3c4c8"/>
+          <circle cx="78" cy="112" r="20" fill="none" stroke="#c9a96e" stroke-width="5"/>
+          <circle cx="112" cy="112" r="20" fill="none" stroke="#d8bd87" stroke-width="5"/>
+          <path d="M106 88 l6 -10 l6 10 z" fill="#ffffff" stroke="#c9a96e" stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <p class="cover-date" id="coverDate">2027. 05. 22 SAT PM 1:00</p>
+      <p class="cover-place">더채플 앳 청담 2층 그랜드홀</p>
+    </section>
+
+    <!-- 인사말 -->
+    <section class="section greeting">
+      <h2 class="title">INVITATION</h2>
+      <p>
+        서로가 마주보며 다져온 사랑을<br>
+        이제 함께 한 곳을 바라보며<br>
+        걸어가려 합니다.<br><br>
+        저희 두 사람의 새로운 시작을<br>
+        따뜻한 마음으로 축복해 주시면<br>
+        더없는 기쁨으로 간직하겠습니다.
+      </p>
+      <div class="parents">
+        <p><b>김철수 · 박영희</b>의 아들 <strong>민준</strong></p>
+        <p><b>이정호 · 최수진</b>의 딸 <strong>유나</strong></p>
+      </div>
+    </section>
+
+    <!-- 달력 & D-day -->
+    <section class="section">
+      <h2 class="title">WEDDING DAY</h2>
+      <p class="sub" id="dateText"></p>
+      <div class="calendar" id="calendar"></div>
+      <div class="countdown" id="countdown">
+        <div><b id="cd-days">0</b><span>DAYS</span></div>
+        <div><b id="cd-hours">0</b><span>HOUR</span></div>
+        <div><b id="cd-min">0</b><span>MIN</span></div>
+        <div><b id="cd-sec">0</b><span>SEC</span></div>
+      </div>
+      <p class="dday-msg" id="ddayMsg"></p>
+    </section>
+
+    <!-- 갤러리 -->
+    <section class="section">
+      <h2 class="title">GALLERY</h2>
+      <div class="gallery">
+        <div class="photo p1"><span>Photo 1</span></div>
+        <div class="photo p2"><span>Photo 2</span></div>
+        <div class="photo p3"><span>Photo 3</span></div>
+        <div class="photo p4"><span>Photo 4</span></div>
+      </div>
+      <p class="hint">* images 폴더에 사진을 넣고 css에서 교체하세요</p>
+    </section>
+
+    <!-- 오시는 길 -->
+    <section class="section">
+      <h2 class="title">LOCATION</h2>
+      <p class="place-name">더채플 앳 청담</p>
+      <p class="place-addr">서울특별시 강남구 선릉로 757</p>
+      <div class="map" aria-hidden="true">
+        <svg viewBox="0 0 300 160">
+          <rect width="300" height="160" fill="#f4f1ea"/>
+          <path d="M0 60 H300 M0 120 H300 M80 0 V160 M210 0 V160" stroke="#fff" stroke-width="10"/>
+          <path d="M150 50 c-14 0 -22 10 -22 22 c0 16 22 38 22 38 s22 -22 22 -38 c0 -12 -8 -22 -22 -22z" fill="#e89aa3"/>
+          <circle cx="150" cy="72" r="7" fill="#fff"/>
+        </svg>
+      </div>
+      <ul class="transport">
+        <li><b>지하철</b> 7호선 청담역 9번 출구 도보 5분</li>
+        <li><b>버스</b> 청담사거리 하차 (143, 240, 3011)</li>
+        <li><b>주차</b> 건물 내 지하주차장 2시간 무료</li>
+      </ul>
+    </section>
+
+    <!-- 마음 전하실 곳 -->
+    <section class="section">
+      <h2 class="title">마음 전하실 곳</h2>
+      <div class="account">
+        <div><span>신랑 김민준</span><span class="acc">국민 123-456-7890</span><button class="copy" data-copy="국민 123-456-7890">복사</button></div>
+        <div><span>신부 이유나</span><span class="acc">신한 110-123-456789</span><button class="copy" data-copy="신한 110-123-456789">복사</button></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="script">Thank you</p>
+      <button class="share" id="shareBtn">링크 공유하기</button>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
