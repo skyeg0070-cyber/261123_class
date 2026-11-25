@@ -3,125 +3,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>민준 ♥ 유나 결혼합니다</title>
+  <title>MELLOW BEAN</title>
+  <meta name="description" content="매장에서 직접 볶은 원두를 핸드드립으로 내리는 카페, MELLOW BEAN.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-  <!-- 떨어지는 꽃잎 -->
-  <div class="petals" id="petals" aria-hidden="true"></div>
 
-  <main class="card">
-    <!-- 커버 -->
-    <section class="cover">
-      <svg class="floral floral-top" viewBox="0 0 300 120" aria-hidden="true">
-        <g fill="none" stroke="#9bb59a" stroke-width="2">
-          <path d="M10 100 C 80 20, 220 20, 290 100"/>
-          <path d="M60 60 q -15 -20 -5 -35"/><path d="M240 60 q 15 -20 5 -35"/>
-        </g>
-        <g fill="#f3c4c8"><circle cx="150" cy="38" r="14"/><circle cx="105" cy="48" r="9"/><circle cx="195" cy="48" r="9"/></g>
-        <g fill="#e89aa3"><circle cx="150" cy="38" r="6"/><circle cx="105" cy="48" r="4"/><circle cx="195" cy="48" r="4"/></g>
-        <g fill="#b9d0b5"><ellipse cx="55" cy="25" rx="5" ry="10" transform="rotate(-20 55 25)"/><ellipse cx="245" cy="25" rx="5" ry="10" transform="rotate(20 245 25)"/></g>
-      </svg>
+  <!-- ===== 상단 메뉴 (스크롤해도 위에 고정) ===== -->
+  <header class="site-header" id="top">
+    <div class="topbar">
+      <h1 class="logo">
+        <a href="#top" aria-label="MELLOW BEAN">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 84" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 71 Q13 40 15 12 Q24 31 32 49 Q40 29 48 10 Q50 40 52 70"/>
+              <path d="M95 14 Q80 11 67 12 Q65 41 65 69 Q81 71 97 69"/>
+              <path d="M66 40 Q78 38 89 40"/>
+              <path d="M109 11 Q107 40 107 70 Q122 68 137 69"/>
+              <path d="M149 13 Q148 41 147 69 Q162 71 176 69"/>
+              <path d="M206 11 C183 9 184 71 205 71 C229 72 228 8 201 15"/>
+              <path d="M235 12 Q239 41 243 70 Q249 51 256 33 Q262 51 268 69 Q274 40 281 11"/>
+              <path d="M313 12 Q311 41 311 70"/>
+              <path d="M313 12 C341 7 343 38 314 39 C349 37 347 74 311 70"/>
+              <path d="M388 13 Q373 12 360 14 Q358 41 358 69 Q374 70 390 67"/>
+              <path d="M360 41 Q371 39 383 41"/>
+              <path d="M400 71 Q409 41 418 11 Q427 40 437 70"/>
+              <path d="M407 49 Q418 46 430 48"/>
+              <path d="M450 71 Q450 41 451 13 Q466 41 480 69 Q480 39 482 10"/>
+            </g>
+          </svg>
+        </a>
+      </h1>
+      <nav class="nav" aria-label="섹션 이동">
+        <a href="#beans">원두</a>
+        <a href="#menu">메뉴</a>
+        <a href="#story">이야기</a>
+        <a href="#location">위치</a>
+      </nav>
+    </div>
+  </header>
 
-      <p class="script">We're getting married</p>
-      <h1 class="names"><span>김민준</span><em>&amp;</em><span>이유나</span></h1>
+  <main class="content">
 
-      <div class="cover-illust" aria-hidden="true">
-        <svg viewBox="0 0 200 200">
-          <circle cx="100" cy="100" r="92" fill="#fbeef0"/>
-          <path d="M100 150 C 40 110, 55 55, 100 80 C 145 55, 160 110, 100 150 Z" fill="#f3c4c8"/>
-          <circle cx="78" cy="112" r="20" fill="none" stroke="#c9a96e" stroke-width="5"/>
-          <circle cx="112" cy="112" r="20" fill="none" stroke="#d8bd87" stroke-width="5"/>
-          <path d="M106 88 l6 -10 l6 10 z" fill="#ffffff" stroke="#c9a96e" stroke-width="1.5"/>
-        </svg>
-      </div>
-
-      <p class="cover-date" id="coverDate">2027. 05. 22 SAT PM 1:00</p>
-      <p class="cover-place">더채플 앳 청담 2층 그랜드홀</p>
-    </section>
-
-    <!-- 인사말 -->
-    <section class="section greeting">
-      <h2 class="title">INVITATION</h2>
-      <p>
-        서로가 마주보며 다져온 사랑을<br>
-        이제 함께 한 곳을 바라보며<br>
-        걸어가려 합니다.<br><br>
-        저희 두 사람의 새로운 시작을<br>
-        따뜻한 마음으로 축복해 주시면<br>
-        더없는 기쁨으로 간직하겠습니다.
-      </p>
-      <div class="parents">
-        <p><b>김철수 · 박영희</b>의 아들 <strong>민준</strong></p>
-        <p><b>이정호 · 최수진</b>의 딸 <strong>유나</strong></p>
-      </div>
-    </section>
-
-    <!-- 달력 & D-day -->
-    <section class="section">
-      <h2 class="title">WEDDING DAY</h2>
-      <p class="sub" id="dateText"></p>
-      <div class="calendar" id="calendar"></div>
-      <div class="countdown" id="countdown">
-        <div><b id="cd-days">0</b><span>DAYS</span></div>
-        <div><b id="cd-hours">0</b><span>HOUR</span></div>
-        <div><b id="cd-min">0</b><span>MIN</span></div>
-        <div><b id="cd-sec">0</b><span>SEC</span></div>
-      </div>
-      <p class="dday-msg" id="ddayMsg"></p>
-    </section>
-
-    <!-- 갤러리 -->
-    <section class="section">
-      <h2 class="title">GALLERY</h2>
-      <div class="gallery">
-        <div class="photo p1"><span>Photo 1</span></div>
-        <div class="photo p2"><span>Photo 2</span></div>
-        <div class="photo p3"><span>Photo 3</span></div>
-        <div class="photo p4"><span>Photo 4</span></div>
-      </div>
-      <p class="hint">* images 폴더에 사진을 넣고 css에서 교체하세요</p>
-    </section>
-
-    <!-- 오시는 길 -->
-    <section class="section">
-      <h2 class="title">LOCATION</h2>
-      <p class="place-name">더채플 앳 청담</p>
-      <p class="place-addr">서울특별시 강남구 선릉로 757</p>
-      <div class="map" aria-hidden="true">
-        <svg viewBox="0 0 300 160">
-          <rect width="300" height="160" fill="#f4f1ea"/>
-          <path d="M0 60 H300 M0 120 H300 M80 0 V160 M210 0 V160" stroke="#fff" stroke-width="10"/>
-          <path d="M150 50 c-14 0 -22 10 -22 22 c0 16 22 38 22 38 s22 -22 22 -38 c0 -12 -8 -22 -22 -22z" fill="#e89aa3"/>
-          <circle cx="150" cy="72" r="7" fill="#fff"/>
-        </svg>
-      </div>
-      <ul class="transport">
-        <li><b>지하철</b> 7호선 청담역 9번 출구 도보 5분</li>
-        <li><b>버스</b> 청담사거리 하차 (143, 240, 3011)</li>
-        <li><b>주차</b> 건물 내 지하주차장 2시간 무료</li>
-      </ul>
-    </section>
-
-    <!-- 마음 전하실 곳 -->
-    <section class="section">
-      <h2 class="title">마음 전하실 곳</h2>
-      <div class="account">
-        <div><span>신랑 김민준</span><span class="acc">국민 123-456-7890</span><button class="copy" data-copy="국민 123-456-7890">복사</button></div>
-        <div><span>신부 이유나</span><span class="acc">신한 110-123-456789</span><button class="copy" data-copy="신한 110-123-456789">복사</button></div>
+    <!-- ===== 1. 첫 화면: 사진 안에 문구 ===== -->
+    <section class="hero wrap" aria-label="소개">
+      <div class="hero-visual">
+        <img class="hero-photo"
+             src="images/cafe-interior.jpg"
+             srcset="images/cafe-interior-600.jpg 600w, images/cafe-interior.jpg 1200w"
+             sizes="(min-width: 1088px) 944px, 92vw"
+             width="1200" height="816"
+             fetchpriority="high"
+             alt="로스팅 기계와 원두 자루가 보이는 매장 내부">
+        <p class="hero-line">매일 아침 <br class="br-mobile">직접 볶은 원두를 <br>손으로 내립니다.</p>
       </div>
     </section>
 
-    <footer class="footer">
-      <p class="script">Thank you</p>
-      <button class="share" id="shareBtn">링크 공유하기</button>
-    </footer>
+    <!-- ===== 2. 이번 주 원두 (내용 수정: 아래 표) ===== -->
+    <section class="section" id="beans" aria-labelledby="beans-title">
+      <div class="wrap">
+        <h2 class="section-title" id="beans-title">이번 주 원두</h2>
+        <table class="beans">
+          <thead>
+            <tr>
+              <th scope="col">이름</th>
+              <th scope="col">산지</th>
+              <th scope="col">가공</th>
+              <th scope="col">로스팅</th>
+              <th scope="col">맛</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">예가체프</th>
+              <td data-label="산지">에티오피아</td>
+              <td data-label="가공">워시드</td>
+              <td data-label="로스팅">11.24 · 약배전</td>
+              <td data-label="맛">자스민, 레몬, 홍차</td>
+            </tr>
+            <tr>
+              <th scope="row">우일라</th>
+              <td data-label="산지">콜롬비아</td>
+              <td data-label="가공">워시드</td>
+              <td data-label="로스팅">11.22 · 중배전</td>
+              <td data-label="맛">밀크초콜릿, 아몬드, 흑설탕</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== 3. 추출 방식 (내용 수정: 아래 수치) ===== -->
+    <section class="section" id="brew" aria-labelledby="brew-title">
+      <div class="wrap">
+        <h2 class="section-title" id="brew-title">추출 방식</h2>
+        <p class="lead">핸드드립 한 잔은 아래 수치로 내립니다. 물은 네 번에 나눠 붓고, 처음 30초는 뜸을 들입니다.</p>
+        <dl class="recipe">
+          <div><dt>원두</dt><dd>18g</dd></div>
+          <div><dt>물 온도</dt><dd>93℃</dd></div>
+          <div><dt>물 양</dt><dd>270ml</dd></div>
+          <div><dt>추출 시간</dt><dd>2분 30초</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== 4. 메뉴 (내용 수정: 각 article) ===== -->
+    <section class="section" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <h2 class="section-title" id="menu-title">메뉴</h2>
+        <div class="menu-grid">
+
+          <article class="menu-item">
+            <div class="menu-photo"><img src="images/hand-drip-coffee.jpg" srcset="images/hand-drip-coffee-600.jpg 600w, images/hand-drip-coffee.jpg 1200w" sizes="(min-width: 1088px) 300px, (min-width: 960px) 29vw, (min-width: 600px) 45vw, 92vw" width="1200" height="799" alt="핸드드립 커피를 내리는 드리퍼" loading="lazy"></div>
+            <p class="menu-cat">COFFEE</p>
+            <div class="menu-head"><h3>핸드드립</h3><span class="price">6.0</span></div>
+            <p class="menu-desc">이번 주 원두 중 선택</p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-photo"><img src="images/cafe-latte.jpg" srcset="images/cafe-latte-600.jpg 600w, images/cafe-latte.jpg 1200w" sizes="(min-width: 1088px) 300px, (min-width: 960px) 29vw, (min-width: 600px) 45vw, 92vw" width="1200" height="1037" alt="잎 모양 라떼아트가 올라간 카페라떼" loading="lazy"></div>
+            <p class="menu-cat">COFFEE</p>
+            <div class="menu-head"><h3>카페라떼</h3><span class="price">5.0</span></div>
+            <p class="menu-desc">우일라 원두, 우유 200ml</p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-photo"><img src="images/latte-with-cookie.jpg" srcset="images/latte-with-cookie-600.jpg 600w, images/latte-with-cookie.jpg 1200w" sizes="(min-width: 1088px) 300px, (min-width: 960px) 29vw, (min-width: 600px) 45vw, 92vw" width="1200" height="1010" alt="라떼 한 잔과 초코칩 쿠키" loading="lazy"></div>
+            <p class="menu-cat">COFFEE</p>
+            <div class="menu-head"><h3>라떼 &amp; 쿠키</h3><span class="price">6.5</span></div>
+            <p class="menu-desc">카페라떼와 초코칩 쿠키</p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-photo"><img src="images/strawberry-latte.jpg" srcset="images/strawberry-latte-600.jpg 600w, images/strawberry-latte.jpg 875w" sizes="(min-width: 1088px) 300px, (min-width: 960px) 29vw, (min-width: 600px) 45vw, 92vw" width="875" height="1200" alt="딸기가 올라간 딸기라떼" loading="lazy"></div>
+            <p class="menu-cat">NON-COFFEE</p>
+            <div class="menu-head"><h3>딸기라떼</h3><span class="price">5.8</span></div>
+            <p class="menu-desc">생딸기를 직접 갈아 넣습니다</p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-photo"><img src="images/lemon-ade.jpg" srcset="images/lemon-ade-600.jpg 600w, images/lemon-ade.jpg 904w" sizes="(min-width: 1088px) 300px, (min-width: 960px) 29vw, (min-width: 600px) 45vw, 92vw" width="904" height="1200" alt="줄무늬 빨대가 꽂힌 레몬에이드" loading="lazy"></div>
+            <p class="menu-cat">NON-COFFEE</p>
+            <div class="menu-head"><h3>레몬에이드</h3><span class="price">5.5</span></div>
+            <p class="menu-desc">레몬즙과 탄산수</p>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-photo"><img src="images/tiramisu.jpg" srcset="images/tiramisu-600.jpg 600w, images/tiramisu.jpg 1200w" sizes="(min-width: 1088px) 300px, (min-width: 960px) 29vw, (min-width: 600px) 45vw, 92vw" width="1200" height="904" alt="초콜릿 조각을 올린 티라미수" loading="lazy"></div>
+            <p class="menu-cat">DESSERT</p>
+            <div class="menu-head"><h3>티라미수</h3><span class="price">6.5</span></div>
+            <p class="menu-desc">에스프레소에 적신 사보이아르디</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. 가게 이야기 (내용 수정: 아래 문단) ===== -->
+    <section class="section" id="story" aria-labelledby="story-title">
+      <div class="wrap story">
+        <img class="story-photo"
+             src="images/hand-drip-coffee.jpg"
+             srcset="images/hand-drip-coffee-600.jpg 600w, images/hand-drip-coffee.jpg 1200w"
+             sizes="(min-width: 1088px) 500px, (min-width: 960px) 50vw, 92vw"
+             width="1200" height="799"
+             loading="lazy"
+             alt="주전자로 핸드드립 커피를 내리는 모습">
+        <div class="story-text">
+          <h2 class="section-title" id="story-title">가게 이야기</h2>
+          <p>MELLOW BEAN은 매장 안쪽에서 원두를 직접 볶습니다. 볶은 지 2주가 지난 원두는 쓰지 않습니다.</p>
+          <p>매주 두 가지 원두를 골라 핸드드립과 라떼로 냅니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. 위치 (지도 + 빨간 원 표시 + 찾아오는 정보, 내용 수정: 아래 dl) ===== -->
+    <section class="section" id="location" aria-labelledby="location-title">
+      <div class="wrap">
+        <h2 class="section-title" id="location-title">위치</h2>
+        <div class="location">
+        <div class="map">
+          <img src="images/cafe-map.jpg" width="676" height="671" alt="MELLOW BEAN 위치 지도. 반월당역 북쪽, 빨간 원으로 표시한 곳" loading="lazy">
+          <!-- 빨간 원: 지도 이미지(676×671) 좌표 기준. 위치를 옮기려면 cx, cy를 바꾼다 -->
+          <svg class="map-mark" viewBox="0 0 676 671" aria-hidden="true">
+            <circle cx="312" cy="283" r="68"/>
+          </svg>
+        </div>
+        <dl class="visit">
+          <div><dt>주소</dt><dd>대구광역시 중구 연습로 12, 1층<br>반월당역에서 걸어서 5분</dd></div>
+          <div><dt>영업시간</dt><dd>화–일 09:00–19:00<br>월요일 휴무</dd></div>
+          <div><dt>전화</dt><dd><a href="tel:0530000000">053-000-0000</a></dd></div>
+          <div><dt>인스타그램</dt><dd>@mellowbean.practice</dd></div>
+        </dl>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <div class="toast" id="toast"></div>
-  <script src="js/main.js"></script>
+  <footer class="footer wrap">
+    <p>© 2026 MELLOW BEAN · 연습용 사이트입니다.</p>
+  </footer>
 </body>
 </html>
